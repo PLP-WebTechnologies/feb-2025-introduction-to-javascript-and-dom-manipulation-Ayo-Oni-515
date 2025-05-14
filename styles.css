@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(197, 197, 220);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.alert-box {
+    position: absolute;
+    display: none;
+    text-align: center;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 5em;
+    background-color: rgba(39, 38, 38, 0.739);
+    border-radius: 1.5em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.alert h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.alert button {
+    padding: 1em;
+    color: white;
+    border-radius: 0.5em;
+    background-color: rgba(239, 11, 11, 0.671);
+}
+
+/* Navigation Section */
+
+nav {
+    width: 70vw;    
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15em;
+    /* border: 2px solid black; */
+}
+
+li a {
+    text-decoration: none;
+}
+
+li a:hover {
+    color: white;
+}
+
+li a:link, li a:visited{
+    color: black;
+}
+
+/* Main Section */
+
+.container {
+    margin: 2em auto;
+    width: 70vw;
+    /* border: 2px solid black; */
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+.flex-item {
+    padding: 1em;
+    flex: 1;
+    text-align: center;
+    /* border: 2px solid black; */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    gap: 2em;
+}
+
+.grid-item {
+    padding: 2em;
+    text-align: center;
+    /* border: 2px solid black; */
+}
+
+/* Button Section */
+.btn-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-container button {
+    padding: 1.5em;
+    border-radius: 0.5em;
+}
+
+.btn-container button:first-child {
+    color: white;
+    background-color: rgb(58, 55, 55);
+}
+.btn-container button:nth-child(2) {
+    color: white;
+    background-color: rgb(240, 67, 67);
+}
+.btn-container button:last-child {
+    color: white;
+    background-color: rgb(42, 213, 67);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        gap: 1.5em;
+    }
+
+    .flex-container {
+        display: block;
+    }
+
+    .flex-item {
+        padding: 2em;
+        margin-bottom: 0.55em;
+        text-align: center;
+        /* border: 2px solid black; */
+    }
+
+    .grid-container {
+        display: block;
+    }
+
+    .grid-item {
+        padding: 2em;
+        margin-bottom: 0.55em;
+        text-align: center;
+        /* border: 2px solid black; */
+    }
+}
